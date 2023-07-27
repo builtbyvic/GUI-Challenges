@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <title>Stories</title>
+  <style>
+    body {
+      display: grid;
+      min-block-size: 100vh;
+      place-items: center;
+
+      &>.stories {
+        block-size: 100vw;
+        inline-size: 100wv;
+      }
+    }
+
+    .stories {
+      display: grid;
+      grid: 1fr / auto-flow 100vw;
+    }
+
+    .story {
+      background-image: var(--bg);
+    }
+
+    .user {
+      display: grid;
+      grid: [story] 1fr / [story] 1fr;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="stories">
+    <section class="user">
+      <article class="story" style="--bg: url(https://picsum.photos/480/840)"></article>
+      <article class="story" style="--bg: url(https://picsum.photos/480/840)"></article>
+      <article class="story" style="--bg: url(https://picsum.photos/480/840)"></article>
+    </section>
+    <section class="user">
+      <article class="story" style="--bg: url(https://picsum.photos/480/840)"></article>
+      <article class="story" style="--bg: url(https://picsum.photos/480/840)"></article>
+      <article class="story" style="--bg: url(https://picsum.photos/480/840)"></article>
+    </section>
+    <section class="user">
+      <article class="story" style="--bg: url(https://picsum.photos/480/840)"></article>
+      <article class="story" style="--bg: url(https://picsum.photos/480/840)"></article>
+      <article class="story" style="--bg: url(https://picsum.photos/480/840)"></article>
+    </section>
+  </div>
+</body>
+
+</html>
